@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import render_template
+from flask import request
 
 app = Flask(__name__)
 
@@ -9,6 +10,21 @@ app = Flask(__name__)
 @app.route("/index")
 def index():
     return render_template("index.html")
+
+
+@app.route("/robots.txt")
+def robots():
+    return app.send_static_file("robots.txt")
+
+
+@app.route("/humans.txt")
+def humans():
+    return app.send_static_file("humans.txt")
+
+
+@app.route("/nav")
+def nav():
+    print("nav: ".format(request.args))
 
 
 if __name__ == '__main__':

@@ -1,12 +1,12 @@
 var images = {
-    "thumbnail-ade": "img/ade2orbital.png",
-    "thumbnail-DESMO": "img/eqDESMOfull.png",
-    "thumbnail-FMO": "img/FMO-MS-RMD_TOC.png",
-    "thumbnail-qchem": "img/Qchem-logo.gif",
-    "thumbnail-mathworkers": "img/mathworkers.png",
-    "thumbnail-cassandra": "img/cassandra.png",
-    "thumbnail-genetic": "img/genetic.png",
-    "thumbnail-scaling": "img/scalingGraph.png"
+    "thumbnail-ade": "/static/img/ade2orbital.png",
+    "thumbnail-DESMO": "/static/img/eqDESMOfull.png",
+    "thumbnail-FMO": "/static/img/FMO-MS-RMD_TOC.png",
+    "thumbnail-qchem": "/static/img/Qchem-logo.gif",
+    "thumbnail-mathworkers": "/static/img/mathworkers.png",
+    "thumbnail-cassandra": "/static/img/cassandra.png",
+    "thumbnail-genetic": "/static/img/genetic.png",
+    "thumbnail-scaling": "/static/img/scalingGraph.png"
 };
 
 $(document).ready(function() {
