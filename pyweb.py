@@ -24,7 +24,7 @@ def humans():
 
 @app.route("/nav")
 def nav():
-    print("nav: ".format(request.args))
+    return "", 204
 
 
 if __name__ == '__main__':
