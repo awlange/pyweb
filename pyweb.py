@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-from flask import request
+from flask import redirect
 
 app = Flask(__name__)
 
@@ -25,6 +25,11 @@ def humans():
 @app.route("/nav")
 def nav():
     return "", 204
+
+
+@app.route("/file/<path:path>")
+def file_redirect(path):
+    return redirect("/static/file/{}".format(path), code=302)
 
 
 if __name__ == '__main__':
