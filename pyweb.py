@@ -32,6 +32,16 @@ def file_redirect(path):
     return redirect("/static/file/{}".format(path), code=302)
 
 
+@app.route("/blog")
+def blog_redirect():
+    return redirect("/", code=302)
+
+
+@app.route("/blog/<path:n>")
+def blog_path_redirect(n):
+    return redirect("/", code=302)
+
+
 if __name__ == '__main__':
     # app.run("0.0.0.0")
     app.run()
