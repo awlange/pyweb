@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>Adrian Lange | scientist + developer</title>
-    <meta name="description" content="Adrian Lange | scientist + developer">
+    <meta name="description" content="Adrian Lange | particle networks">
     <meta name="author" content="Adrian Lange">
     <meta name="keywords" content="Adrian, Lange, scientist, developer, data, engineer, Apple, San Francisco, Bay Area, Cupertino, Argonne, Ohio State, PhD, Ph.D., resume, CV, publications, Java, python, R, C++, C, SQL, NoSQL, Cassandra, JavaScript, node.js, machine learning, deep learning, math, statistics, science">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="/css/skeleton.css" type="text/css">
-    <link rel="stylesheet" href="/css/spinner.css" type="text/css">
-    <link rel="stylesheet" href="/css/main_new.css" type="text/css"/>
+    <link rel="stylesheet" href={{ url_for("static", filename="css/normalize.css") }} type="text/css">
+    <link rel="stylesheet" href={{ url_for("static", filename="css/skeleton.css") }} type="text/css">
+    <link rel="stylesheet" href={{ url_for("static", filename="css/spinner.css") }} type="text/css">
+    <link rel="stylesheet" href={{ url_for("static", filename="css/main_new.css") }} type="text/css"/>
 
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href={{ url_for("static", filename="favicon.ico") }}>
 </head>
 <body>
 
@@ -27,7 +27,7 @@
 
             <div class="row">
                 <div class="twelve columns">
-                    <video src="particle_network_1.webm" controls>
+                    <video src="../static/file/particle_network_1.webm" controls>
                     </video>
                     <p>
                         A particle network being fit with RPROP to the MNIST digits data set.
@@ -76,7 +76,7 @@
                     <p class="justify">
                         I am working on writing a draft manuscript to document PNs. If things go well,
                         I might publish it. It is incomplete at the moment, but
-                        <a href="pn_draft.pdf">you can read it here</a>. Therein, you'll find the current formulation
+                        <a href="../static/file/pn_draft.pdf">you can read it here</a>. Therein, you'll find the current formulation
                         of the PN model and its analytic backpropagation gradient.
                     </p>
                 </div>
@@ -88,8 +88,8 @@
 
     <!-- Scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/vendor/jquery-2.1.4.min.js"><\/script>');</script>
-    <script src="/js/site.js"></script>
+    <script>window.jQuery || document.write('<script src={{ url_for("static", filename="js/vendor/jquery-2.1.4.min.js") }}><\/script>');</script>
+    <script src={{ url_for("static", filename="js/site.js") }}></script>
 
     <!-- Analytics -->
     <script type="text/javascript">

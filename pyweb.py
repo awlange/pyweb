@@ -12,6 +12,11 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/particle_network_hidden_page")
+def particle():
+    return render_template("particle_network_hidden_page.html")
+
+
 @app.route("/robots.txt")
 def robots():
     return app.send_static_file("robots.txt")
